@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz - PyLearn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/Logo_image_blue.png" alt="Python Logo">
+            <h1>PyLearn</h1>
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="lessons.html"><i class="fas fa-book"></i> Lessons</a></li>
+            <li><a href="examples.html"><i class="fas fa-code"></i> Examples</a></li>
+            <li><a href="quiz.html" class="active"><i class="fas fa-question-circle"></i> Quiz</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="quiz-container">
+            <h2 style="text-align: center; color: #007bff; margin-bottom: 2rem;">Python Knowledge Quiz</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Test your understanding of Python basics. Answer all 5 questions!</p>
+            
+            <div id="quizContent">
+                <div class="question">
+                    <h3 id="question">Question will appear here</h3>
+                    <div id="options" class="options">
+                       
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button id="nextBtn" style="padding: 1rem 3rem; font-size: 1.1rem;">Next Question</button>
+                </div>
+            </div>
+            
+            <div id="result" class="result" style="display: none;">
+                <h3><i class="fas fa-trophy"></i> Quiz Completed!</h3>
+                <p id="score">Your score will appear here</p>
+                <div style="margin-top: 2rem;">
+                    <button onclick="location.reload()" style="margin-right: 1rem;">
+                        <i class="fas fa-redo"></i> Retry Quiz
+                    </button>
+                    <button onclick="location.href='lessons.html'" style="background: #6c757d;">
+                        <i class="fas fa-book"></i> Review Lessons
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-top: 3rem;">
+            <h3><i class="fas fa-lightbulb"></i> Quiz Tips</h3>
+            <ul>
+                <li>Each question has only one correct answer</li>
+                <li>Click on your chosen answer before clicking "Next Question"</li>
+                <li>Score 4-5: Excellent! You understand Python basics well</li>
+                <li>Score 2-3: Good, but review the lessons for improvement</li>
+                <li>Score 0-1: Spend more time with the examples and lessons</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+                <p>&copy; 2025 PyLearn. All rights for the developer</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
